@@ -19,7 +19,22 @@ nome = prompt("Digite seu nome: ");
 console.log("\nDigite sua data de nascimento com dia, mês e ano separados por '-' deste jeito: 00-00-0000");
 DataDeNascimento = prompt("Data de nascimento: ");
 
-DataDeNascimento = DataDeNascimento.replaceAll("-", "");
-DataAtual = Number(new String(ano+mes+dia));
+DataDeNascimento = Number((DataDeNascimento.split("-").reverse().join("")));
+if (mes < 10) {
+    zero = '0';
+}
+else {
+    zero = '';
+}
+DataAtual = Number(ano + '' + zero + mes + '' + dia);
 
+idade = DataAtual - DataDeNascimento;
+idade = Number(idade.toString().substring(0, 2));
 
+console.log(`\nOlá ${nome}, Você tem ${idade} anos`);
+if (idade >= 18) {
+    console.log("Acesso Liberado");
+}
+else {
+    console.log("Acesso Negado");
+}
