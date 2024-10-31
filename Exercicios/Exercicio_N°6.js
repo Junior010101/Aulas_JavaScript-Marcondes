@@ -8,7 +8,7 @@ var idade;
 //entrada
 console.log(`${"=".repeat(12)} Algoritimo que fala sua classe eleitoral ${"=".repeat(12)}\n`);
 
-idade = prompt("Digite sua idade: ");
+idade = Number(prompt("Digite sua idade: "));
 
 //saida
 if (idade < 16){

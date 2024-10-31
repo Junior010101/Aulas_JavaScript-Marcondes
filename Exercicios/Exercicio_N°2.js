@@ -13,7 +13,7 @@ var idade;
 var nome;
 
 //entrada
-console.log(`${"=".repeat(12)} Algoritimo que converte real para dolar ${"=".repeat(12)}\n`);
+console.log(`${"=".repeat(12)} Olá, Este é um algoritimo de autenticação ${"=".repeat(12)}\n`);
 nome = prompt("Digite seu nome: ");
 
 console.log("\nDigite sua data de nascimento com dia, mês e ano separados por '-' deste jeito: 00-00-0000");
